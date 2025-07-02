@@ -1,3 +1,6 @@
+'use client';
+
+import { useRouter } from "next/navigation";
 import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
@@ -22,6 +25,12 @@ type DashboardHeaderProps = {
 }
 
 export function DashboardHeader({ user }: DashboardHeaderProps) {
+  const router = useRouter();
+
+  const handleLogout = () => {
+    router.push('/');
+  };
+
   return (
     <header className="sticky top-0 z-10 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
       <div className="flex items-center gap-2">
@@ -54,7 +63,7 @@ export function DashboardHeader({ user }: DashboardHeaderProps) {
                 <span>Settings</span>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
+            <DropdownMenuItem onClick={handleLogout}>
                 <LogOut className="mr-2 h-4 w-4" />
                 <span>Logout</span>
             </DropdownMenuItem>

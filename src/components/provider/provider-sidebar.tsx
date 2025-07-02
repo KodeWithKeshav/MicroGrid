@@ -18,11 +18,8 @@ import {
   Package,
   BrainCircuit,
   Settings,
-  PlusCircle
 } from "lucide-react"
 import { Logo } from "@/components/logo"
-import Link from 'next/link'
-import { Button } from '../ui/button'
 
 export function ProviderSidebar() {
   const pathname = usePathname()
@@ -43,14 +40,6 @@ export function ProviderSidebar() {
             >
               Dashboard
             </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-             <Button className="w-full justify-start" asChild>
-                <Link href="/provider/spaces/new">
-                    <PlusCircle className="mr-2 h-4 w-4" />
-                    List a New Space
-                </Link>
-             </Button>
           </SidebarMenuItem>
         </SidebarMenu>
         
