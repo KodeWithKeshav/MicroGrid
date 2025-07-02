@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { MoreHorizontal, UserPlus } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const partners = [
   { id: 'PRT-001', name: 'John Doe', status: 'Active', vehicle: 'Van', serviceArea: '90210, 90211', rating: 4.8 },
@@ -63,7 +63,6 @@ export default function AdminPartnersPage() {
                   <TableCell>
                     <div className="flex items-center gap-3">
                       <Avatar>
-                         <AvatarImage src={`https://placehold.co/40x40.png`} data-ai-hint="profile photo" />
                          <AvatarFallback>{partner.name.charAt(0)}</AvatarFallback>
                       </Avatar>
                       <span className="font-medium">{partner.name}</span>

@@ -13,7 +13,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { LogOut, User, Settings } from "lucide-react"
 import { Logo } from "@/components/logo"
 
@@ -45,7 +45,6 @@ export function DashboardHeader({ user }: DashboardHeaderProps) {
           <DropdownMenuTrigger asChild>
             <Button variant="secondary" size="icon" className="rounded-full">
               <Avatar>
-                <AvatarImage src={`https://placehold.co/40x40.png`} data-ai-hint="profile photo" alt={user.name} />
                 <AvatarFallback>{user.initials}</AvatarFallback>
               </Avatar>
               <span className="sr-only">Toggle user menu</span>
