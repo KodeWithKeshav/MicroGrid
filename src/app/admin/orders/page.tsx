@@ -45,8 +45,8 @@ export default function AdminOrdersPage() {
             <Image 
               src="https://placehold.co/1200x600.png" 
               alt="Live map of deliveries" 
-              layout="fill" 
-              objectFit="cover"
+              fill
+              className="object-cover"
               data-ai-hint="city map"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
