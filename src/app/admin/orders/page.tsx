@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
@@ -41,15 +40,17 @@ export default function AdminOrdersPage() {
           <CardTitle>Live Delivery Map</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="aspect-video w-full bg-muted rounded-lg overflow-hidden relative">
-            <Image 
-              src="https://placehold.co/1200x600.png" 
-              alt="Live map of deliveries" 
-              fill
-              className="object-cover"
-              data-ai-hint="city map"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+          <div className="aspect-video w-full bg-muted rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-122.4194,37.7749,-122.41,37.7849&layer=mapnik"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Live Delivery Map"
+            ></iframe>
           </div>
         </CardContent>
       </Card>
