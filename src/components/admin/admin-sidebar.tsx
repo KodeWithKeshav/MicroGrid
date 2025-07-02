@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import {
   Sidebar,
@@ -33,38 +34,46 @@ export function AdminSidebar() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton
-              href="/admin/dashboard"
+              asChild
               isActive={isActive('/admin/dashboard')}
-              icon={<LayoutDashboard />}
             >
-              Dashboard
+              <Link href="/admin/dashboard">
+                <LayoutDashboard />
+                <span>Dashboard</span>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton
-              href="/admin/spaces"
+              asChild
               isActive={isActive('/admin/spaces')}
-              icon={<Warehouse />}
             >
-              Spaces
+              <Link href="/admin/spaces">
+                <Warehouse />
+                <span>Spaces</span>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton
-              href="/admin/partners"
+              asChild
               isActive={isActive('/admin/partners')}
-              icon={<Users />}
             >
-              Delivery Partners
+              <Link href="/admin/partners">
+                <Users />
+                <span>Delivery Partners</span>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton
-              href="/admin/orders"
+              asChild
               isActive={isActive('/admin/orders')}
-              icon={<Package />}
             >
-              Orders & Deliveries
+              <Link href="/admin/orders">
+                <Package />
+                <span>Orders & Deliveries</span>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
@@ -72,8 +81,11 @@ export function AdminSidebar() {
       <SidebarFooter>
          <SidebarMenu>
             <SidebarMenuItem>
-                <SidebarMenuButton href="#" icon={<Settings />}>
-                    Settings
+                <SidebarMenuButton asChild>
+                  <Link href="#">
+                    <Settings />
+                    <span>Settings</span>
+                  </Link>
                 </SidebarMenuButton>
             </SidebarMenuItem>
          </SidebarMenu>

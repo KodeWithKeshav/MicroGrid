@@ -116,8 +116,8 @@ function FeatureCard({ icon, title, description }: { icon: React.ReactNode, titl
 
 function RoleCard({ title, description, link, linkText, className }: { title: string, description: string, link: string, linkText: string, className?: string }) {
   return (
-    <Card className={className}>
-      <CardHeader>
+    <Card className={`flex flex-col ${className || ''}`}>
+      <CardHeader className="flex-grow">
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
