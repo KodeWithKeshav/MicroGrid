@@ -6,9 +6,9 @@ import { DollarSign, CheckCircle, Truck, Car, Route } from "lucide-react"
 import Image from "next/image";
 
 const availableJobs = [
-    { id: 'JOB-101', pickup: 'Main St Garage', dropoff: '123 Oak Ave', distance: '3.2 mi', payout: '$12.50' },
-    { id: 'JOB-102', pickup: 'Suburban Basement', dropoff: '456 Pine Ln', distance: '5.1 mi', payout: '$18.00' },
-    { id: 'JOB-103', pickup: 'Downtown Loft', dropoff: '789 Maple Rd', distance: '1.5 mi', payout: '$8.75' },
+    { id: 'JOB-101', pickup: 'Koramangala Hub', dropoff: '123 Indiranagar', distance: '3.2 mi', payout: '₹150' },
+    { id: 'JOB-102', pickup: 'Jayanagar Storage', dropoff: '456 BTM Layout', distance: '5.1 mi', payout: '₹220' },
+    { id: 'JOB-103', pickup: 'MG Road Loft', dropoff: '789 Commercial St', distance: '1.5 mi', payout: '₹100' },
 ];
 
 export default function PartnerDashboard() {
@@ -20,7 +20,7 @@ export default function PartnerDashboard() {
       </div>
 
        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <StatCard title="Today's Earnings" value="$64.50" icon={<DollarSign className="h-6 w-6 text-muted-foreground" />} />
+        <StatCard title="Today's Earnings" value="₹2,500" icon={<DollarSign className="h-6 w-6 text-muted-foreground" />} />
         <StatCard title="Completed Deliveries" value="5" icon={<CheckCircle className="h-6 w-6 text-muted-foreground" />} />
         <StatCard title="Active Route" value="JOB-104" icon={<Route className="h-6 w-6 text-muted-foreground" />} />
       </div>
@@ -48,7 +48,7 @@ export default function PartnerDashboard() {
                                 <TableCell className="font-medium">{job.pickup}</TableCell>
                                 <TableCell>{job.dropoff}</TableCell>
                                 <TableCell>{job.distance}</TableCell>
-                                <TableCell className="font-semibold text-green-600">{job.payout}</TableCell>
+                                <TableCell className="font-semibold">{job.payout}</TableCell>
                                 <TableCell className="text-right">
                                     <Button size="sm">Accept Job</Button>
                                 </TableCell>
@@ -72,8 +72,8 @@ export default function PartnerDashboard() {
                     className="rounded-lg mx-auto"
                 />
                 <div className="space-y-1">
-                    <p className="font-semibold text-lg">2022 Ford Transit</p>
-                    <p className="text-muted-foreground">License: 5ABC123</p>
+                    <p className="font-semibold text-lg">2022 Tata Ace</p>
+                    <p className="text-muted-foreground">License: KA 01 AB 1234</p>
                     <Badge variant="secondary" className="mt-2">
                         <Car className="mr-2 h-4 w-4"/>
                         Van

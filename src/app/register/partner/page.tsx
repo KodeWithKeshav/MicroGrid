@@ -46,8 +46,8 @@ export default function PartnerRegisterPage() {
             </Select>
         </div>
         <div className="space-y-2">
-            <Label htmlFor="service-area">Service Area (e.g., ZIP codes)</Label>
-            <Input id="service-area" placeholder="90210, 90211" required />
+            <Label htmlFor="service-area">Service Area (e.g., PIN codes)</Label>
+            <Input id="service-area" placeholder="560001, 400053" required />
         </div>
         <Button type="submit" className="w-full">
             Create Account

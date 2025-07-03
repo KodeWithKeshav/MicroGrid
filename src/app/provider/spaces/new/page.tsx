@@ -21,13 +21,13 @@ export default function NewSpacePage() {
           <form className="space-y-6">
             <div className="space-y-2">
               <Label htmlFor="space-name">Space Name</Label>
-              <Input id="space-name" placeholder="e.g., Main Street Garage" />
+              <Input id="space-name" placeholder="e.g., Koramangala Garage" />
               <p className="text-xs text-muted-foreground">A descriptive name helps identify the space.</p>
             </div>
             
             <div className="space-y-2">
               <Label htmlFor="location">Location</Label>
-              <Input id="location" placeholder="e.g., 123 Main St, Anytown, USA 12345" />
+              <Input id="location" placeholder="e.g., 123 MG Road, Bangalore, 560001" />
             </div>
 
             <div className="grid grid-cols-3 gap-4">

@@ -6,11 +6,11 @@ import { MoreHorizontal } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 const orders = [
-  { id: 'ORD7562', destination: '123 Main St, Anytown', partner: 'John Doe', status: 'In Transit', vehicle: 'Van' },
-  { id: 'ORD7561', destination: '456 Oak Ave, Somecity', partner: 'Jane Smith', status: 'Delivered', vehicle: 'Car' },
-  { id: 'ORD7560', destination: '789 Pine Ln, Yourburg', partner: 'Mike Ross', status: 'Out for Delivery', vehicle: 'Scooter' },
-  { id: 'ORD7559', destination: '101 Maple Rd, Heretown', partner: 'Sarah Lee', status: 'Processing', vehicle: 'Van' },
-  { id: 'ORD7558', destination: '212 Birch Blvd, Anytown', partner: 'Chris Green', status: 'In Transit', vehicle: 'Car' },
+  { id: 'ORD7562', destination: '123 MG Road, Bangalore', partner: 'John Doe', status: 'In Transit', vehicle: 'Van' },
+  { id: 'ORD7561', destination: '456 Park Street, Kolkata', partner: 'Jane Smith', status: 'Delivered', vehicle: 'Car' },
+  { id: 'ORD7560', destination: '789 Juhu Tara Road, Mumbai', partner: 'Mike Ross', status: 'Out for Delivery', vehicle: 'Scooter' },
+  { id: 'ORD7559', destination: '101 Anna Salai, Chennai', partner: 'Sarah Lee', status: 'Processing', vehicle: 'Van' },
+  { id: 'ORD7558', destination: '212 Connaught Place, New Delhi', partner: 'Chris Green', status: 'In Transit', vehicle: 'Car' },
 ];
 
 export default function AdminOrdersPage() {
@@ -42,7 +42,7 @@ export default function AdminOrdersPage() {
         <CardContent>
           <div className="aspect-video w-full bg-muted rounded-lg overflow-hidden">
             <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-122.4194,37.7749,-122.41,37.7849&layer=mapnik"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=68.1,8.0,97.4,37.1&layer=mapnik"
               width="100%"
               height="100%"
               style={{ border: 0 }}

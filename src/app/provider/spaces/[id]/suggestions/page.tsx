@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 // Mock data for a single space, in a real app this would be fetched based on the [id] param
 const mockSpace = {
   id: 'spc-1',
-  name: 'Main Street Garage',
-  location: 'San Francisco, CA',
+  name: 'Koramangala Garage',
+  location: 'Mumbai, India',
   dimensions: '10ft x 20ft x 8ft',
 };
 

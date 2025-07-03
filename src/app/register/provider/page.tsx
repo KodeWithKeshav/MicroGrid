@@ -31,7 +31,7 @@ export default function ProviderRegisterPage() {
         </div>
         <div className="space-y-2">
             <Label htmlFor="location">Primary Location (e.g., City, State)</Label>
-            <Input id="location" placeholder="San Francisco, CA" required />
+            <Input id="location" placeholder="Mumbai, Maharashtra" required />
         </div>
         <Button type="submit" className="w-full">
             Create Account

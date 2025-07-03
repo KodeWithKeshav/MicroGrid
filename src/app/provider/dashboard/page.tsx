@@ -16,8 +16,8 @@ import Image from 'next/image';
 const spaces = [
   { 
     id: 'spc-1',
-    name: 'Main Street Garage', 
-    location: 'Anytown, USA', 
+    name: 'Koramangala Garage', 
+    location: 'Bangalore, India', 
     size: '10x20 ft', 
     capacity: 0.8,
     inventory: [
@@ -28,8 +28,8 @@ const spaces = [
   },
   { 
     id: 'spc-2',
-    name: 'Suburban Basement', 
-    location: 'Yourburg, USA', 
+    name: 'Juhu Basement', 
+    location: 'Mumbai, India', 
     size: '15x15 ft',
     capacity: 0.6,
     inventory: [
@@ -50,7 +50,7 @@ export default function ProviderDashboard() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <StatCard title="Listed Spaces" value="2" icon={<Warehouse className="h-6 w-6 text-muted-foreground" />} />
         <StatCard title="Items in Stock" value="162" icon={<Package className="h-6 w-6 text-muted-foreground" />} />
-        <StatCard title="Monthly Earnings" value="$452.80" icon={<DollarSign className="h-6 w-6 text-muted-foreground" />} />
+        <StatCard title="Monthly Earnings" value="₹18,500" icon={<DollarSign className="h-6 w-6 text-muted-foreground" />} />
       </div>
       
       <div>
