@@ -6,11 +6,11 @@ import { MoreHorizontal, PlusCircle } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 const spaces = [
-  { id: 'SPC-001', name: 'Koramangala Garage', provider: 'Alice Johnson', location: 'Bangalore, India', status: 'Approved', size: '10x20 ft' },
-  { id: 'SPC-002', name: 'Park Street Loft Storage', provider: 'Bob Williams', location: 'Kolkata, India', status: 'Pending', size: '8x10 ft' },
-  { id: 'SPC-003', name: 'Juhu Basement', provider: 'Charlie Brown', location: 'Mumbai, India', status: 'Approved', size: '15x15 ft' },
-  { id: 'SPC-004', name: 'Industrial Unit B', provider: 'Diana Prince', location: 'Chennai, India', status: 'Needs Review', size: '30x40 ft' },
-  { id: 'SPC-005', name: 'Connaught Place Closet', provider: 'Edward Nigma', location: 'New Delhi, India', status: 'Approved', size: '5x5 ft' },
+  { id: 'SPC-001', name: 'Vaishali Nagar Garage', provider: 'Alice Johnson', location: 'Jaipur, India', status: 'Approved', size: '10x20 ft' },
+  { id: 'SPC-002', name: 'Hazratganj Loft Storage', provider: 'Bob Williams', location: 'Lucknow, India', status: 'Pending', size: '8x10 ft' },
+  { id: 'SPC-003', name: 'Koregaon Park Basement', provider: 'Charlie Brown', location: 'Pune, India', status: 'Approved', size: '15x15 ft' },
+  { id: 'SPC-004', name: 'Pithampur Industrial Unit B', provider: 'Diana Prince', location: 'Indore, India', status: 'Needs Review', size: '30x40 ft' },
+  { id: 'SPC-005', name: 'Arera Hills Closet', provider: 'Edward Nigma', location: 'Bhopal, India', status: 'Approved', size: '5x5 ft' },
 ];
 
 export default function AdminSpacesPage() {

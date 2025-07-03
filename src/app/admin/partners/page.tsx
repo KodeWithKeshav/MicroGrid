@@ -7,11 +7,11 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const partners = [
-  { id: 'PRT-001', name: 'John Doe', status: 'Active', vehicle: 'Van', serviceArea: '560001, 560002', rating: 4.8 },
-  { id: 'PRT-002', name: 'Jane Smith', status: 'Active', vehicle: 'Car', serviceArea: '110001, 110002', rating: 4.9 },
-  { id: 'PRT-003', name: 'Mike Ross', status: 'Pending Approval', vehicle: 'Scooter', serviceArea: '400053', rating: 0 },
-  { id: 'PRT-004', name: 'Sarah Lee', status: 'Inactive', vehicle: 'Van', serviceArea: '700016, 700017', rating: 4.5 },
-  { id: 'PRT-005', name: 'Chris Green', status: 'Active', vehicle: 'Car', serviceArea: '600001', rating: 4.7 },
+  { id: 'PRT-001', name: 'John Doe', status: 'Active', vehicle: 'Van', serviceArea: '302001, 302004', rating: 4.8 },
+  { id: 'PRT-002', name: 'Jane Smith', status: 'Active', vehicle: 'Car', serviceArea: '226010, 226024', rating: 4.9 },
+  { id: 'PRT-003', name: 'Mike Ross', status: 'Pending Approval', vehicle: 'Scooter', serviceArea: '452001', rating: 0 },
+  { id: 'PRT-004', name: 'Sarah Lee', status: 'Inactive', vehicle: 'Van', serviceArea: '440012, 440010', rating: 4.5 },
+  { id: 'PRT-005', name: 'Chris Green', status: 'Active', vehicle: 'Car', serviceArea: '641018, 641004', rating: 4.7 },
 ];
 
 export default function AdminPartnersPage() {

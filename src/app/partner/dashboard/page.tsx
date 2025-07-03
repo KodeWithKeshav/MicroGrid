@@ -6,9 +6,9 @@ import { DollarSign, CheckCircle, Truck, Car, Route } from "lucide-react"
 import Image from "next/image";
 
 const availableJobs = [
-    { id: 'JOB-101', pickup: 'Koramangala Hub', dropoff: '123 Indiranagar', distance: '3.2 mi', payout: '₹150' },
-    { id: 'JOB-102', pickup: 'Jayanagar Storage', dropoff: '456 BTM Layout', distance: '5.1 mi', payout: '₹220' },
-    { id: 'JOB-103', pickup: 'MG Road Loft', dropoff: '789 Commercial St', distance: '1.5 mi', payout: '₹100' },
+    { id: 'JOB-101', pickup: 'Malviya Nagar Hub', dropoff: '123 Raja Park', distance: '3.2 mi', payout: '₹150' },
+    { id: 'JOB-102', pickup: 'Gomti Nagar Storage', dropoff: '456 Indira Nagar', distance: '5.1 mi', payout: '₹220' },
+    { id: 'JOB-103', pickup: 'FC Road Loft', dropoff: '789 M.G. Road, Pune', distance: '1.5 mi', payout: '₹100' },
 ];
 
 export default function PartnerDashboard() {
@@ -73,7 +73,7 @@ export default function PartnerDashboard() {
                 />
                 <div className="space-y-1">
                     <p className="font-semibold text-lg">2022 Tata Ace</p>
-                    <p className="text-muted-foreground">License: KA 01 AB 1234</p>
+                    <p className="text-muted-foreground">License: RJ 14 AB 1234</p>
                     <Badge variant="secondary" className="mt-2">
                         <Car className="mr-2 h-4 w-4"/>
                         Van

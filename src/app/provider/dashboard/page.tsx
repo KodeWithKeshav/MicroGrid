@@ -16,8 +16,8 @@ import Image from 'next/image';
 const spaces = [
   { 
     id: 'spc-1',
-    name: 'Koramangala Garage', 
-    location: 'Bangalore, India', 
+    name: 'C-Scheme Garage', 
+    location: 'Jaipur, India', 
     size: '10x20 ft', 
     capacity: 0.8,
     inventory: [
@@ -28,8 +28,8 @@ const spaces = [
   },
   { 
     id: 'spc-2',
-    name: 'Juhu Basement', 
-    location: 'Mumbai, India', 
+    name: 'Viman Nagar Basement', 
+    location: 'Pune, India', 
     size: '15x15 ft',
     capacity: 0.6,
     inventory: [

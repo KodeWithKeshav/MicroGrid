@@ -6,11 +6,11 @@ import { MoreHorizontal } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 const orders = [
-  { id: 'ORD7562', destination: '123 MG Road, Bangalore', partner: 'John Doe', status: 'In Transit', vehicle: 'Van' },
-  { id: 'ORD7561', destination: '456 Park Street, Kolkata', partner: 'Jane Smith', status: 'Delivered', vehicle: 'Car' },
-  { id: 'ORD7560', destination: '789 Juhu Tara Road, Mumbai', partner: 'Mike Ross', status: 'Out for Delivery', vehicle: 'Scooter' },
-  { id: 'ORD7559', destination: '101 Anna Salai, Chennai', partner: 'Sarah Lee', status: 'Processing', vehicle: 'Van' },
-  { id: 'ORD7558', destination: '212 Connaught Place, New Delhi', partner: 'Chris Green', status: 'In Transit', vehicle: 'Car' },
+  { id: 'ORD7562', destination: '15, MI Road, Jaipur', partner: 'John Doe', status: 'In Transit', vehicle: 'Van' },
+  { id: 'ORD7561', destination: '22 Aliganj, Lucknow', partner: 'Jane Smith', status: 'Delivered', vehicle: 'Car' },
+  { id: 'ORD7560', destination: '88, A.B. Road, Indore', partner: 'Mike Ross', status: 'Out for Delivery', vehicle: 'Scooter' },
+  { id: 'ORD7559', destination: '112, Sitabuldi, Nagpur', partner: 'Sarah Lee', status: 'Processing', vehicle: 'Van' },
+  { id: 'ORD7558', destination: '45, Arera Colony, Bhopal', partner: 'Chris Green', status: 'In Transit', vehicle: 'Car' },
 ];
 
 export default function AdminOrdersPage() {
